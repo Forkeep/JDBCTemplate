@@ -1,5 +1,15 @@
 package cn.forkeep.domain;
 
+/**
+ * 数据库中，表名：user
+ * +----+----------+-----+----------------+
+ * | id | name     | age | password       |
+ * +----+----------+-----+----------------+
+ * |  1 | lisi     |  20 | lsdk1233112    |
+ * |  2 | zhangsan |  19 | asdkjalsdjklas |
+ * +----+----------+-----+----------------+
+ *
+ */
 public class User {
     private Integer id;
     private String name;
