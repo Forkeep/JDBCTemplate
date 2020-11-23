@@ -10,9 +10,12 @@ public class C3P0Demo2 {
     public static void main(String[] args) throws SQLException {
         DataSource ds = new ComboPooledDataSource();//创建数据库连接池对象
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 11; i++) {
             Connection conn = ds.getConnection();//从连接池获取连接对象
             System.out.println(i+":"+conn);
+            if (i == 3){
+                conn.close();
+            }
         }
 
     }
