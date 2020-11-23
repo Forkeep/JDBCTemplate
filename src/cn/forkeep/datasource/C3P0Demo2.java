@@ -14,7 +14,7 @@ public class C3P0Demo2 {
             Connection conn = ds.getConnection();//从连接池获取连接对象
             System.out.println(i+":"+conn);
             if (i == 3){
-                conn.close();
+                conn.close();//释放第三个连接，为后边连接让出资源
             }
         }
 
